@@ -1,6 +1,7 @@
 .box{
   width: 200px;
   height: 200px;
+  display: inline-block;
 }
 
 .green{
@@ -11,8 +12,28 @@
   background-color: #eb3b5a;
 }
 
+.pink{
+  background-color: #ff7675;
+}
+
+.blue{
+    background-color: #0984e3;
+}
+
+.purple{
+  background-color: #a29bfe;
+}
+
 .wider{
   width: 500px;
   /* height: 300px;
   background-color: pink; */
+}
+
+.higher{
+  height: 600px;
+}
+
+.listColor{
+  color: blue;
 }

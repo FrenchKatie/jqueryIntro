@@ -31,13 +31,13 @@ $(document).ready(function(){
   //what happens when the event is actioned
 
 
-  $("#box1").click(function(){
-    console.log("green box is clicked")
-  })
-
-  $("#box2").dblclick(function(){
-    console.log("red box is clicked")
-  })
+  // $("#box1").click(function(){
+  //   console.log("green box is clicked")
+  // })
+  //
+  // $("#box2").dblclick(function(){
+  //   console.log("red box is clicked")
+  // })
 
   //Common basic events:
   //click() = click
@@ -56,13 +56,13 @@ $(document).ready(function(){
   //Common Effects:
 
   //Preventing the default event from happening:
-  $("#myForm").submit(function() {
-    event.preventDefault();
-    console.log("do this instead");
-  })
+  // $("#myForm").submit(function() {
+  //   event.preventDefault();
+  //   console.log("do this instead");
+  // })
 
   //Selecting an object to action something else
-  $("#box1").click(function(){
+
     // $("#box2").hide(); //hiding the second box
     // $("#box2").toggle(5000); //toggles the hide on and off.  This time delay is recorded in miliseconds - 5000 = 5 seconds
     // $("#box2").fadeOut(5000); //fade out the second box
@@ -72,5 +72,28 @@ $(document).ready(function(){
     // $("#box2").removeClass("wider"); //remove class to the second box
     // $("#box2").css("background-color", "pink"); //change a css property.  The element, and the property you want to change
     // $("#box2").css({"background-color":"pink", "width":"500px"}); //change more than one css property at a time
-  })
+
+
+
+    //What you would do to target one element at a time:
+    // $("#box1").click(function(){
+    //   $("#box1").toggleClass("higher");
+    // })
+
+    //Targeting multiple elements to do the same action:
+    // $(".box").click(function(){
+    //   $(this).toggleClass("higher");//this stands for THIS current element that i am selecting - dont affect all with this class.
+    // })
+
+    //When i click this button i want to add more text to this paragraph
+    $("#button").click(function(){
+      // $("#paragraph").append(" This text gets added to the end"); //append means add it to the end of targeted element
+      // $("#paragraph").prepend("This text is adding to the start "); //prepemd means add it to the start of targeted element
+      // $("#paragraph").text("override the text"); //This will override the original text and replace it with the new text
+      // $("#paragraph").empty(); // This will empty the contents of the target element - all the text inside it is gone
+      // $("#paragraph").remove(); //This will completely remove the targeted element
+      // $("#list1").append("<li>This is a list item</li>"); //You can append any HTML tags, images, anything!
+      // $("#list1").append("<li class='listColor'>This is a list item</li>"); //if you are going to add a class or id then you need to make sure you are using the correct quotation marks.  I.e. double first - single inside.
+      // $("body").append("<div class='box blue'></div>");
+    })
 })
